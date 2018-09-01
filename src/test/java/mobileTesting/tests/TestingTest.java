@@ -1,6 +1,6 @@
-package mobileTesting.Tests;
+package mobileTesting.tests;
 
-import mobileTesting.Configuration.InitiateDevice;
+import mobileTesting.configuration.InitiateDevice;
 import org.testng.annotations.Test;
 
 public class TestingTest extends InitiateDevice {

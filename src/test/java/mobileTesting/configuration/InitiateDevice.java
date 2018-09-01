@@ -1,4 +1,4 @@
-package mobileTesting.Configuration;
+package mobileTesting.configuration;
 
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.ios.IOSDriver;
@@ -13,7 +13,7 @@ public abstract class InitiateDevice {
 
     private static AndroidDriver androidDriver;
     private static IOSDriver iosDriver;
-
+    public static int zeroTimeInterval, shortTimeInterval, normalTimeInterval, longTimeInterval;
     public enum Platform {IOS, Android}
     private static Platform platform = Platform.Android;
 
@@ -54,6 +54,11 @@ public abstract class InitiateDevice {
                 System.out.println("Android driver initialized successfully.");
                 break;
         }
+        // timeout intervals
+        zeroTimeInterval = 0;
+        shortTimeInterval = 5;
+        normalTimeInterval = 10;
+        longTimeInterval = 60;
     }
 
     @AfterSuite(alwaysRun = true)
@@ -80,5 +85,9 @@ public abstract class InitiateDevice {
         if (!platform.equals(Platform.Android))
             throw new SkipException("Can't use IOS driver on an Android platform");
         return androidDriver;
+    }
+
+    public static Platform getPlatform() {
+        return platform;
     }
 }
