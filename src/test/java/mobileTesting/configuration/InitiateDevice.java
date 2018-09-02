@@ -15,7 +15,7 @@ public abstract class InitiateDevice {
     private static IOSDriver iosDriver;
     public static int zeroTimeInterval, shortTimeInterval, normalTimeInterval, longTimeInterval;
     public enum Platform {IOS, ANDROID}
-    private static Platform platform = Platform.IOS;
+    private static Platform platform = Platform.ANDROID;
 
     @BeforeSuite(alwaysRun = true)
     public void setUp() throws Exception {
