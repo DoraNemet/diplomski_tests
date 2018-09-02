@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="RegressionActions1">
+
+    <test name="Calculator operations">
+        <classes>
+            <class name="mobileTesting.tests.CalculatorOperationsTest">
+                <methods>
+                    <include name="additionTest"/>
+                    <include name="subtractionTest"/>
+                    <include name="multiplicationTest"/>
+                    <include name="divisionTest"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+</suite>

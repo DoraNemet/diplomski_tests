@@ -103,7 +103,7 @@ public abstract class CrossPlatformUtility extends InitiateDevice {
      */
     public static void verifyElementContainsText(By identifier, String text) {
         if (!getItemText(identifier).contains(text)) {
-            failTest("Element does not contains text.");
+            failTest("Element '" + identifier + "' does not contain '" + text + "'");
         }
     }
 
