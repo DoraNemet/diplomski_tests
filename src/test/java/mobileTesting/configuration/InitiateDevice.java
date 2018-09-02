@@ -14,8 +14,8 @@ public abstract class InitiateDevice {
     private static AndroidDriver androidDriver;
     private static IOSDriver iosDriver;
     public static int zeroTimeInterval, shortTimeInterval, normalTimeInterval, longTimeInterval;
-    public enum Platform {IOS, Android}
-    private static Platform platform = Platform.Android;
+    public enum Platform {IOS, ANDROID}
+    private static Platform platform = Platform.IOS;
 
     @BeforeSuite(alwaysRun = true)
     public void setUp() throws Exception {
@@ -38,12 +38,11 @@ public abstract class InitiateDevice {
                 capabilities.setCapability("bundleId", "dfundak.MultiTask");
 
                 iosDriver = new IOSDriver(new URL("http://0.0.0.0:4723/wd/hub"), capabilities);
-                System.out.println("IOS driver initialized successfully.");
                 break;
 
-            case Android:
+            case ANDROID:
                 capabilities.setCapability("deviceName", "Galaxy S6");
-                capabilities.setCapability("platformName", "Android");
+                capabilities.setCapability("platformName", "ANDROID");
                 capabilities.setCapability("platformVersion", "7.0");
                 capabilities.setCapability("automationName", "Appium");
 
@@ -51,7 +50,7 @@ public abstract class InitiateDevice {
                 capabilities.setCapability("appActivity", "MainActivity");
 
                 androidDriver = new AndroidDriver(new URL("http://0.0.0.0:4723/wd/hub"), capabilities);
-                System.out.println("Android driver initialized successfully.");
+                System.out.println("ANDROID driver initialized successfully.");
                 break;
         }
         // timeout intervals
@@ -66,24 +65,22 @@ public abstract class InitiateDevice {
 
         if (androidDriver != null) {
             androidDriver.quit();
-            System.out.println("Android driver quit.");
         }
 
         if (iosDriver != null) {
             iosDriver.quit();
-            System.out.println("IOS driver quit.");
         }
     }
 
     public static IOSDriver getIOSDriver() {
         if (!platform.equals(Platform.IOS))
-            throw new SkipException("Can't use Android driver on a IOS platform");
+            throw new SkipException("Can't use ANDROID driver on a IOS platform");
         return iosDriver;
     }
 
     public static AndroidDriver getAndroidDriver() {
-        if (!platform.equals(Platform.Android))
-            throw new SkipException("Can't use IOS driver on an Android platform");
+        if (!platform.equals(Platform.ANDROID))
+            throw new SkipException("Can't use IOS driver on an ANDROID platform");
         return androidDriver;
     }
 

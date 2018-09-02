@@ -43,7 +43,7 @@ public abstract class CrossPlatformUtility extends InitiateDevice {
                 new WebDriverWait(getIOSDriver(), normalTimeInterval).until(ExpectedConditions.visibilityOfElementLocated(identifier));
                 getIOSDriver().findElement(identifier);
                 break;
-            case Android:
+            case ANDROID:
                 WebElement e = getElement(identifier);
                 if (e != null) {
                     return;
@@ -139,7 +139,7 @@ public abstract class CrossPlatformUtility extends InitiateDevice {
             case IOS:
                 swipe = new TouchAction(getIOSDriver());
                 break;
-            case Android:
+            case ANDROID:
                 swipe = new TouchAction(getAndroidDriver());
                 break;
         }
@@ -177,7 +177,7 @@ public abstract class CrossPlatformUtility extends InitiateDevice {
             case IOS:
                 new WebDriverWait(getIOSDriver(), normalTimeInterval).until(ExpectedConditions.visibilityOfElementLocated(identifier));
                 return getIOSDriver().findElement(identifier);
-            case Android:
+            case ANDROID:
                 new WebDriverWait(getAndroidDriver(), normalTimeInterval).until(ExpectedConditions.visibilityOfElementLocated(identifier));
                 return getAndroidDriver().findElement(identifier);
         }

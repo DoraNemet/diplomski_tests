@@ -10,6 +10,10 @@
                     <include name="subtractionTest"/>
                     <include name="multiplicationTest"/>
                     <include name="divisionTest"/>
+                    <include name="stackedOperationsTest"/>
+                    <include name="decimalPointTest"/>
+                    <include name="acTest"/>
+                    <include name="cTest"/>
                 </methods>
             </class>
         </classes>
