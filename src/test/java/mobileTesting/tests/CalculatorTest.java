@@ -5,7 +5,7 @@ import mobileTesting.locators.Calculator;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-public class CalculatorOperationsTest extends CrossPlatformUtility {
+public class CalculatorTest extends CrossPlatformUtility {
 
     @BeforeMethod
     public void before() {

@@ -2,11 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8395a088-e88e-4191-82b9-5ab865d9d78c" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/mobileTesting/locators/Fuel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/mobileTesting/tests/FuelTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/mobileTesting/locators/Notes.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/mobileTesting/tests/NotesTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/mobileTesting/configuration/InitiateDevice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/mobileTesting/configuration/InitiateDevice.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/mobileTesting/suites/Calculator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/mobileTesting/suites/Calculator.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/mobileTesting/tests/CalculatorOperationsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/mobileTesting/tests/CalculatorTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/mobileTesting/Configuration/InitiateDevice.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/mobileTesting/Configuration/InitiateDevice.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/mobileTesting/suites/Calculator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/mobileTesting/suites/Calculator.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/mobileTesting/tests/CalculatorOperationsTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/mobileTesting/tests/FuelTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/mobileTesting/tests/FuelTest.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -22,8 +28,8 @@
       <file leaf-file-name="Fuel.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/mobileTesting/locators/Fuel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="29" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="29" />
+            <state relative-caret-position="135">
+              <caret line="9" column="1" selection-start-line="6" selection-start-column="3" selection-end-line="9" selection-end-column="1" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -35,7 +41,7 @@
         <entry file="file://$PROJECT_DIR$/src/test/java/mobileTesting/configuration/InitiateDevice.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="255">
-              <caret line="17" column="55" selection-start-line="17" selection-start-column="55" selection-end-line="17" selection-end-column="55" />
+              <caret line="17" column="51" selection-start-line="17" selection-start-column="51" selection-end-line="17" selection-end-column="51" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -43,11 +49,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FuelTest.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="FuelTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/mobileTesting/tests/FuelTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="28" selection-end-line="38" />
+            <state relative-caret-position="405">
+              <caret line="27" column="32" lean-forward="true" selection-start-line="21" selection-start-column="4" selection-end-line="27" selection-end-column="32" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#644#645#0" expanded="true" />
@@ -57,11 +63,25 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CalculatorOperationsTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/mobileTesting/tests/CalculatorOperationsTest.java">
+      <file leaf-file-name="NotesTest.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/mobileTesting/tests/NotesTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="122">
-              <caret line="9" selection-start-line="9" selection-end-line="42" selection-end-column="5" />
+            <state relative-caret-position="521">
+              <caret line="38" column="18" selection-start-line="38" selection-start-column="18" selection-end-line="38" selection-end-column="18" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#303#304#0" expanded="true" />
+                <element signature="e#362#363#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Notes.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/mobileTesting/locators/Notes.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="10" column="87" selection-start-line="10" selection-start-column="79" selection-end-line="10" selection-end-column="87" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -102,8 +122,10 @@
         <option value="$PROJECT_DIR$/src/test/java/mobileTesting/tests/CalculatorOperationsTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/mobileTesting/suites/Calculator.xml" />
         <option value="$PROJECT_DIR$/src/test/java/mobileTesting/locators/Fuel.java" />
-        <option value="$PROJECT_DIR$/src/test/java/mobileTesting/configuration/InitiateDevice.java" />
         <option value="$PROJECT_DIR$/src/test/java/mobileTesting/tests/FuelTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/mobileTesting/configuration/InitiateDevice.java" />
+        <option value="$PROJECT_DIR$/src/test/java/mobileTesting/locators/Notes.java" />
+        <option value="$PROJECT_DIR$/src/test/java/mobileTesting/tests/NotesTest.java" />
       </list>
     </option>
   </component>
@@ -236,7 +258,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.FuelTest.formulaCheck">
+  <component name="RunManager" selected="TestNG.NotesTest.cancelAddNote">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
@@ -256,93 +278,6 @@
       </option>
       <patterns />
     </configuration>
-    <configuration name="CalculatorOperationsTest.acTest" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="diplomski_tests" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="mobileTesting.tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SUITE_NAME" />
-      <option name="PACKAGE_NAME" value="mobileTesting.tests" />
-      <option name="MAIN_CLASS_NAME" value="mobileTesting.tests.CalculatorOperationsTest" />
-      <option name="METHOD_NAME" value="acTest" />
-      <option name="GROUP_NAME" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="OUTPUT_DIRECTORY" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <option name="USE_DEFAULT_REPORTERS" value="false" />
-      <option name="PROPERTIES_FILE" />
-      <properties />
-      <listeners />
-    </configuration>
-    <configuration name="CalculatorOperationsTest.cTest" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="diplomski_tests" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="mobileTesting.tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SUITE_NAME" />
-      <option name="PACKAGE_NAME" value="mobileTesting.tests" />
-      <option name="MAIN_CLASS_NAME" value="mobileTesting.tests.CalculatorOperationsTest" />
-      <option name="METHOD_NAME" value="cTest" />
-      <option name="GROUP_NAME" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="OUTPUT_DIRECTORY" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <option name="USE_DEFAULT_REPORTERS" value="false" />
-      <option name="PROPERTIES_FILE" />
-      <properties />
-      <listeners />
-    </configuration>
-    <configuration name="CalculatorOperationsTest.decimalPointTest" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="diplomski_tests" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="mobileTesting.tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SUITE_NAME" />
-      <option name="PACKAGE_NAME" value="mobileTesting.tests" />
-      <option name="MAIN_CLASS_NAME" value="mobileTesting.tests.CalculatorOperationsTest" />
-      <option name="METHOD_NAME" value="decimalPointTest" />
-      <option name="GROUP_NAME" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="OUTPUT_DIRECTORY" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <option name="USE_DEFAULT_REPORTERS" value="false" />
-      <option name="PROPERTIES_FILE" />
-      <properties />
-      <listeners />
-    </configuration>
     <configuration name="FuelTest.formulaCheck" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <module name="diplomski_tests" />
       <extension name="coverage">
@@ -357,6 +292,93 @@
       <option name="PACKAGE_NAME" value="mobileTesting.tests" />
       <option name="MAIN_CLASS_NAME" value="mobileTesting.tests.FuelTest" />
       <option name="METHOD_NAME" value="formulaCheck" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <properties />
+      <listeners />
+    </configuration>
+    <configuration name="NotesTest.addNote" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="diplomski_tests" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="mobileTesting.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" value="mobileTesting.tests" />
+      <option name="MAIN_CLASS_NAME" value="mobileTesting.tests.NotesTest" />
+      <option name="METHOD_NAME" value="addNote" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <properties />
+      <listeners />
+    </configuration>
+    <configuration name="NotesTest.cancelAddNote" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="diplomski_tests" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="mobileTesting.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" value="mobileTesting.tests" />
+      <option name="MAIN_CLASS_NAME" value="mobileTesting.tests.NotesTest" />
+      <option name="METHOD_NAME" value="cancelAddNote" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <properties />
+      <listeners />
+    </configuration>
+    <configuration name="NotesTest.deleteNote" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="diplomski_tests" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="mobileTesting.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" value="mobileTesting.tests" />
+      <option name="MAIN_CLASS_NAME" value="mobileTesting.tests.NotesTest" />
+      <option name="METHOD_NAME" value="deleteNote" />
       <option name="GROUP_NAME" />
       <option name="TEST_OBJECT" value="METHOD" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -419,18 +441,18 @@
     </configuration>
     <list>
       <item itemvalue="TestNG./Users/dorafundak/Documents/diplomski_tests/src/test/java/mobileTesting/suites/Calculator.xml" />
-      <item itemvalue="TestNG.CalculatorOperationsTest.decimalPointTest" />
-      <item itemvalue="TestNG.CalculatorOperationsTest.acTest" />
-      <item itemvalue="TestNG.CalculatorOperationsTest.cTest" />
       <item itemvalue="TestNG.FuelTest.formulaCheck" />
+      <item itemvalue="TestNG.NotesTest.addNote" />
+      <item itemvalue="TestNG.NotesTest.cancelAddNote" />
+      <item itemvalue="TestNG.NotesTest.deleteNote" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.NotesTest.cancelAddNote" />
+        <item itemvalue="TestNG.NotesTest.deleteNote" />
+        <item itemvalue="TestNG.NotesTest.addNote" />
         <item itemvalue="TestNG.FuelTest.formulaCheck" />
         <item itemvalue="TestNG./Users/dorafundak/Documents/diplomski_tests/src/test/java/mobileTesting/suites/Calculator.xml" />
-        <item itemvalue="TestNG.CalculatorOperationsTest.cTest" />
-        <item itemvalue="TestNG.CalculatorOperationsTest.acTest" />
-        <item itemvalue="TestNG.CalculatorOperationsTest.decimalPointTest" />
       </list>
     </recent_temporary>
   </component>
@@ -448,21 +470,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="CalculatorOperationsTest_acTest - 2018.09.02 at 12h 32m 33s.xml">
-      <configuration name="CalculatorOperationsTest.acTest" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="CalculatorOperationsTest_cTest - 2018.09.02 at 12h 54m 14s.xml">
-      <configuration name="CalculatorOperationsTest.cTest" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="CalculatorOperationsTest_cTest - 2018.09.02 at 12h 56m 35s.xml">
-      <configuration name="CalculatorOperationsTest.cTest" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="_Users_dorafundak_Documents_diplomski_tests_src_test_java_mobileTesting_suites_Calculator_xml - 2018.09.02 at 13h 01m 23s.xml">
-      <configuration name="/Users/dorafundak/Documents/diplomski_tests/src/test/java/mobileTesting/suites/Calculator.xml" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="_Users_dorafundak_Documents_diplomski_tests_src_test_java_mobileTesting_suites_Calculator_xml - 2018.09.02 at 13h 05m 05s.xml">
-      <configuration name="/Users/dorafundak/Documents/diplomski_tests/src/test/java/mobileTesting/suites/Calculator.xml" configurationId="TestNG" />
-    </history-entry>
     <history-entry file="FuelTest_formulaCheck - 2018.09.02 at 13h 37m 04s.xml">
       <configuration name="FuelTest.formulaCheck" configurationId="TestNG" />
     </history-entry>
@@ -478,6 +485,21 @@
     <history-entry file="FuelTest_formulaCheck - 2018.09.02 at 14h 05m 44s.xml">
       <configuration name="FuelTest.formulaCheck" configurationId="TestNG" />
     </history-entry>
+    <history-entry file="NotesTest_addNote - 2018.09.02 at 14h 14m 29s.xml">
+      <configuration name="NotesTest.addNote" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="NotesTest_addNote - 2018.09.02 at 14h 15m 15s.xml">
+      <configuration name="NotesTest.addNote" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="NotesTest_cancelAddNote - 2018.09.02 at 14h 16m 28s.xml">
+      <configuration name="NotesTest.cancelAddNote" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="NotesTest_deleteNote - 2018.09.02 at 14h 19m 46s.xml">
+      <configuration name="NotesTest.deleteNote" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="NotesTest_cancelAddNote - 2018.09.02 at 14h 20m 25s.xml">
+      <configuration name="NotesTest.cancelAddNote" configurationId="TestNG" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="568" y="23" width="1281" height="1055" extended-state="0" />
@@ -492,7 +514,7 @@
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="3" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.29436326" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.29436326" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
@@ -820,7 +842,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/mobileTesting/tests/CalculatorOperationsTest.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/mobileTesting/tests/CalculatorTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="122">
           <caret line="9" selection-start-line="9" selection-end-line="42" selection-end-column="5" />
@@ -832,8 +854,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/mobileTesting/locators/Fuel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="29" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="29" />
+        <state relative-caret-position="135">
+          <caret line="9" column="1" selection-start-line="6" selection-start-column="3" selection-end-line="9" selection-end-column="1" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -843,7 +865,7 @@
     <entry file="file://$PROJECT_DIR$/src/test/java/mobileTesting/configuration/InitiateDevice.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
-          <caret line="17" column="55" selection-start-line="17" selection-start-column="55" selection-end-line="17" selection-end-column="55" />
+          <caret line="17" column="51" selection-start-line="17" selection-start-column="51" selection-end-line="17" selection-end-column="51" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -852,12 +874,34 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/mobileTesting/tests/FuelTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="28" selection-end-line="38" />
+        <state relative-caret-position="405">
+          <caret line="27" column="32" lean-forward="true" selection-start-line="21" selection-start-column="4" selection-end-line="27" selection-end-column="32" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#644#645#0" expanded="true" />
             <element signature="e#703#704#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/mobileTesting/locators/Notes.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="87" selection-start-line="10" selection-start-column="79" selection-end-line="10" selection-end-column="87" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/mobileTesting/tests/NotesTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="521">
+          <caret line="38" column="18" selection-start-line="38" selection-start-column="18" selection-end-line="38" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#303#304#0" expanded="true" />
+            <element signature="e#362#363#0" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -4,7 +4,7 @@
 
     <test name="Calculator operations">
         <classes>
-            <class name="mobileTesting.tests.CalculatorOperationsTest">
+            <class name="mobileTesting.tests.CalculatorTest">
                 <methods>
                     <include name="additionTest"/>
                     <include name="subtractionTest"/>
