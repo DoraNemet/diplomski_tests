@@ -11,25 +11,16 @@ import org.testng.SkipException;
 public abstract class CrossPlatformUtility extends InitiateDevice {
 
     /**
-     * Thread sleep time interval
-     *
-     * @param durationInMilliseconds time interval in duration in milliseconds
-     */
-    public static void threadSleepMilisec(int durationInMilliseconds) {
-        try {
-            Thread.sleep(durationInMilliseconds);
-        } catch (Exception e) {
-            System.out.println("Can't sleep");
-        }
-    }
-
-    /**
      * Hold test fot time interval
      *
      * @param durationInSec time interval in seconds
      */
     public static void threadSleep(int durationInSec) {
-        threadSleepMilisec(durationInSec * 1000);
+        try {
+            Thread.sleep(durationInSec * 1000);
+        } catch (Exception e){
+            System.out.println("Can't sleep " + e);
+        }
     }
 
     /**
@@ -50,17 +41,6 @@ public abstract class CrossPlatformUtility extends InitiateDevice {
                 }
                 throw new UnhandledAlertException("Unable to find element");
         }
-    }
-
-
-    /**
-     * Check if element is displayed
-     *
-     * @param identifier
-     * @return
-     */
-    public static boolean isDisplayed(By identifier) {
-        return getElement(identifier).isDisplayed();
     }
 
     /**

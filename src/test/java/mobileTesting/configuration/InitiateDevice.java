@@ -28,15 +28,12 @@ public abstract class InitiateDevice {
 
         switch (platform) {
             case IOS:
-
                 capabilities.setCapability("deviceName", "iPhone 8");
                 capabilities.setCapability("udid", "ebd4d4bf9bbae04a6a0d8663fa0ae4df8403a259");
                 capabilities.setCapability("platformName", "iOS");
                 capabilities.setCapability("platformVersion", "11.4.1");
                 capabilities.setCapability("automationName", "XCUITest");
-
                 capabilities.setCapability("bundleId", "dfundak.MultiTask");
-
                 iosDriver = new IOSDriver(new URL("http://0.0.0.0:4723/wd/hub"), capabilities);
                 break;
 
@@ -45,15 +42,11 @@ public abstract class InitiateDevice {
                 capabilities.setCapability("platformName", "ANDROID");
                 capabilities.setCapability("platformVersion", "7.0");
                 capabilities.setCapability("automationName", "Appium");
-
                 capabilities.setCapability("appPackage", "com.example.dorafundak.multitask");
                 capabilities.setCapability("appActivity", "MainActivity");
-
                 androidDriver = new AndroidDriver(new URL("http://0.0.0.0:4723/wd/hub"), capabilities);
-                System.out.println("ANDROID driver initialized successfully.");
                 break;
         }
-        // timeout intervals
         zeroTimeInterval = 0;
         shortTimeInterval = 5;
         normalTimeInterval = 10;
