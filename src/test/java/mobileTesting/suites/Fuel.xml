@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Fuel">
+
+    <test name="Fuel Test">
+        <classes>
+            <class name="mobileTesting.tests.FuelTest">
+                <methods>
+                    <include name="formulaCheck"/>
+                    <include name="withoutPrice"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+</suite>

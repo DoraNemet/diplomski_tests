@@ -22,12 +22,12 @@ public class NotesTest extends CrossPlatformUtility {
         locateElementClick(Notes.add);
         locateElementSendKeys(Notes.noteField, TEST_NOTE);
         locateElementClick(Notes.save);
-        locateElement(CrossBy.id(TEST_NOTE, ""));
+        verifyElementContainsText(Notes.notesText, TEST_NOTE);
     }
 
     @Test(description = "Delete note")
     public void deleteNote() {
-        if(!isPresent(CrossBy.id(TEST_NOTE, ""))){
+        if(!isPresent(Notes.notesText)){
             addNote();
         }
         switch (getPlatform()){
@@ -35,12 +35,12 @@ public class NotesTest extends CrossPlatformUtility {
                 swipeElementToLeft(CrossBy.id(TEST_NOTE, ""));
                 break;
             case ANDROID:
-                locateElementClick(CrossBy.id(TEST_NOTE, ""));
-                //locateElementClick();
+                locateElementClick(Notes.notesText);
+                locateElementClick(Notes.yes);
                 break;
         }
 
-        if(isPresent(CrossBy.id(TEST_NOTE, ""))) {
+        if(isPresent(Notes.notesText)) {
             failTest(TEST_NOTE + " not deleted");
         }
     }
@@ -50,7 +50,7 @@ public class NotesTest extends CrossPlatformUtility {
         locateElementClick(Notes.add);
         locateElementSendKeys(Notes.noteField, TEST_NOTE2);
         locateElementClick(Notes.cancel);
-        if(isPresent(CrossBy.id(TEST_NOTE2, ""))){
+        if(isPresent(Notes.notesText)){
             failTest("Note is added and it shouldn't be");
         }
     }

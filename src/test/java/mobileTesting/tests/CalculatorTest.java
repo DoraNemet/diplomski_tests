@@ -2,6 +2,7 @@ package mobileTesting.tests;
 
 import mobileTesting.Util.CrossPlatformUtility;
 import mobileTesting.locators.Calculator;
+import mobileTesting.locators.Navigation;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
@@ -9,6 +10,7 @@ public class CalculatorTest extends CrossPlatformUtility {
 
     @BeforeMethod
     public void before() {
+        locateElementClick(Navigation.kalkulatorButton);
         locateElementClick(Calculator.acButton);
     }
 

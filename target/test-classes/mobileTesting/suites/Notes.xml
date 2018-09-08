@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Notes">
+
+    <test name="Notes Test">
+        <classes>
+            <class name="mobileTesting.tests.NotesTest">
+                <methods>
+                    <include name="addNote"/>
+                    <include name="deleteNote"/>
+                    <include name="cancelAddNote"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+</suite>

@@ -35,4 +35,16 @@ public class FuelTest extends CrossPlatformUtility {
         verifyElementContainsText(Fuel.tripPrice, df.format(distance * (consumption / 100) * price));
         verifyElementContainsText(Fuel.fuelUsed, df.format(distance * (consumption / 100)));
     }
+
+    @Test(description = "Result without price")
+    public void withoutPrice() {
+        df.setMaximumFractionDigits(2);
+
+        locateElementSendKeys(Fuel.consumptionField, Double.toString(consumption));
+        locateElementSendKeys(Fuel.distanceField, Double.toString(distance));
+        locateElementClick(Fuel.doneButon);
+        verifyElementContainsText(Fuel.tripPrice, "");
+        verifyElementContainsText(Fuel.fuelUsed, df.format(distance * (consumption / 100)));
+    }
+
 }

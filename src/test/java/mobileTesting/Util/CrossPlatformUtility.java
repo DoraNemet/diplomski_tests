@@ -1,6 +1,8 @@
 package mobileTesting.Util;
 
+import io.appium.java_client.MobileElement;
 import io.appium.java_client.TouchAction;
+import io.appium.java_client.ios.IOSElement;
 import mobileTesting.configuration.InitiateDevice;
 import org.openqa.selenium.*;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -29,18 +31,11 @@ public abstract class CrossPlatformUtility extends InitiateDevice {
      * @param identifier
      */
     public static void locateElement(By identifier) {
-        switch (getPlatform()) {
-            case IOS:
-                new WebDriverWait(getIOSDriver(), normalTimeInterval).until(ExpectedConditions.visibilityOfElementLocated(identifier));
-                getIOSDriver().findElement(identifier);
-                break;
-            case ANDROID:
-                WebElement e = getElement(identifier);
-                if (e != null) {
-                    return;
-                }
-                throw new UnhandledAlertException("Unable to find element");
+        WebElement e = getElement(identifier);
+        if (e != null) {
+            return;
         }
+        throw new UnhandledAlertException("Unable to find element");
     }
 
     /**
@@ -67,7 +62,7 @@ public abstract class CrossPlatformUtility extends InitiateDevice {
      *
      * @param identifier
      */
-    public static String getItemText(By identifier) {
+    public static String getElementText (By identifier) {
         WebElement e = getElement(identifier);
         if (e == null) {
             throw new UnhandledAlertException("Unable to find element");
@@ -82,7 +77,7 @@ public abstract class CrossPlatformUtility extends InitiateDevice {
      * @param text
      */
     public static void verifyElementContainsText(By identifier, String text) {
-        if (!getItemText(identifier).contains(text)) {
+        if (!getElementText (identifier).contains(text)) {
             failTest("Element '" + identifier + "' does not contain '" + text + "'");
         }
     }
