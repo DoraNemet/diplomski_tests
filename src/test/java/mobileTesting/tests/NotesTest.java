@@ -4,7 +4,8 @@ import mobileTesting.Util.CrossBy;
 import mobileTesting.Util.CrossPlatformUtility;
 import mobileTesting.locators.Navigation;
 import mobileTesting.locators.Notes;
-import org.testng.annotations.BeforeMethod;
+import org.openqa.selenium.By;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 public class NotesTest extends CrossPlatformUtility {
@@ -12,7 +13,7 @@ public class NotesTest extends CrossPlatformUtility {
     private String TEST_NOTE = "test note text";
     private String TEST_NOTE2 = "test note text2";
 
-    @BeforeMethod
+    @BeforeClass
     public void before() {
         locateElementClick(Navigation.biljeskeButton);
     }
@@ -22,7 +23,14 @@ public class NotesTest extends CrossPlatformUtility {
         locateElementClick(Notes.add);
         locateElementSendKeys(Notes.noteField, TEST_NOTE);
         locateElementClick(Notes.save);
-        verifyElementContainsText(Notes.notesText, TEST_NOTE);
+        switch (getPlatform()) {
+            case IOS:
+                verifyElementContainsText(By.id(TEST_NOTE), TEST_NOTE);
+                break;
+            case ANDROID:
+                verifyElementContainsText(Notes.notesText, TEST_NOTE);
+                break;
+        }
     }
 
     @Test(description = "Delete note")

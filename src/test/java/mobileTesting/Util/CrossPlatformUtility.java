@@ -1,8 +1,6 @@
 package mobileTesting.Util;
 
-import io.appium.java_client.MobileElement;
 import io.appium.java_client.TouchAction;
-import io.appium.java_client.ios.IOSElement;
 import mobileTesting.configuration.InitiateDevice;
 import org.openqa.selenium.*;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -83,27 +81,6 @@ public abstract class CrossPlatformUtility extends InitiateDevice {
     }
 
     /**
-     * Click if element is available and click on it
-     *
-     * @param clickIdentifier
-     */
-    public static void tryCatchClick(By clickIdentifier) {
-        tryCatchClick(clickIdentifier, clickIdentifier);
-    }
-
-    /**
-     * Click on element if element is available and click on other element
-     *
-     * @param locateIdentifier
-     * @param clickIdentifier
-     */
-    public static void tryCatchClick(By locateIdentifier, By clickIdentifier) {
-        if (isPresent(locateIdentifier)) {
-            locateElementClick(clickIdentifier);
-        }
-    }
-
-    /**
      * Swipe the element to the left
      *
      * @param identifier
@@ -157,6 +134,14 @@ public abstract class CrossPlatformUtility extends InitiateDevice {
                 return getAndroidDriver().findElement(identifier);
         }
         return null;
+    }
+
+    /**
+     * Clear any valie from text input field
+     * @param identifier
+     */
+    public static void clearElement(By identifier) {
+        getElement(identifier).clear();
     }
 
     /**

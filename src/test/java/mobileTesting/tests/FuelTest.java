@@ -13,9 +13,9 @@ import java.util.Locale;
 
 public class FuelTest extends CrossPlatformUtility {
 
-    private double price = 10.34;
-    private double consumption = 8.69;
-    private double distance = 23;
+    private static double PRICE = 10.34;
+    private double CONSUMPTION = 8.69;
+    private double DISTANCE = 23;
     NumberFormat nf = NumberFormat.getNumberInstance(Locale.GERMAN);
     DecimalFormat df = (DecimalFormat) nf;
 
@@ -28,23 +28,24 @@ public class FuelTest extends CrossPlatformUtility {
     public void formulaCheck() {
         df.setMaximumFractionDigits(2);
 
-        locateElementSendKeys(Fuel.priceField, Double.toString(price));
-        locateElementSendKeys(Fuel.consumptionField, Double.toString(consumption));
-        locateElementSendKeys(Fuel.distanceField, Double.toString(distance));
+        locateElementSendKeys(Fuel.priceField, Double.toString(PRICE));
+        locateElementSendKeys(Fuel.consumptionField, Double.toString(CONSUMPTION));
+        locateElementSendKeys(Fuel.distanceField, Double.toString(DISTANCE));
         locateElementClick(Fuel.doneButon);
-        verifyElementContainsText(Fuel.tripPrice, df.format(distance * (consumption / 100) * price));
-        verifyElementContainsText(Fuel.fuelUsed, df.format(distance * (consumption / 100)));
+        verifyElementContainsText(Fuel.tripPrice, df.format(DISTANCE * (CONSUMPTION / 100) * PRICE));
+        verifyElementContainsText(Fuel.fuelUsed, df.format(DISTANCE * (CONSUMPTION / 100)));
     }
 
-    @Test(description = "Result without price")
+    @Test(description = "Result without PRICE")
     public void withoutPrice() {
         df.setMaximumFractionDigits(2);
 
-        locateElementSendKeys(Fuel.consumptionField, Double.toString(consumption));
-        locateElementSendKeys(Fuel.distanceField, Double.toString(distance));
+        clearElement(Fuel.consumptionField);
+        locateElementSendKeys(Fuel.consumptionField, Double.toString(CONSUMPTION));
+        clearElement(Fuel.distanceField);
+        locateElementSendKeys(Fuel.distanceField, Double.toString(DISTANCE));
         locateElementClick(Fuel.doneButon);
         verifyElementContainsText(Fuel.tripPrice, "");
-        verifyElementContainsText(Fuel.fuelUsed, df.format(distance * (consumption / 100)));
+        verifyElementContainsText(Fuel.fuelUsed, df.format(DISTANCE * (CONSUMPTION / 100)));
     }
-
 }

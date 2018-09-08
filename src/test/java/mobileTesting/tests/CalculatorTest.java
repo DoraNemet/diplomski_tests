@@ -3,14 +3,18 @@ package mobileTesting.tests;
 import mobileTesting.Util.CrossPlatformUtility;
 import mobileTesting.locators.Calculator;
 import mobileTesting.locators.Navigation;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 public class CalculatorTest extends CrossPlatformUtility {
 
+    @BeforeClass
+    public void beforeClass() {
+        locateElementClick(Navigation.kalkulatorButton);
+    }
     @BeforeMethod
     public void before() {
-        locateElementClick(Navigation.kalkulatorButton);
         locateElementClick(Calculator.acButton);
     }
 

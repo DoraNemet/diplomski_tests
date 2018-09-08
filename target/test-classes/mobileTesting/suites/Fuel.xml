@@ -7,6 +7,7 @@
             <class name="mobileTesting.tests.FuelTest">
                 <methods>
                     <include name="formulaCheck"/>
+                    <include name="withoutPrice"/>
                 </methods>
             </class>
         </classes>
