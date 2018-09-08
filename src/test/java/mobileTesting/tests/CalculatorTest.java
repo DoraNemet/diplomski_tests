@@ -116,8 +116,8 @@ public class CalculatorTest extends CrossPlatformUtility {
 
     @Test(description = "AC button test")
     public void acTest() {
-        locateElementClick(Calculator.button7);
-        locateElementClick(Calculator.button2);
+        locateElementClick(Calculator.button1);
+        locateElementClick(Calculator.button5);
         locateElementClick(Calculator.plusButton);
         locateElementClick(Calculator.acButton);
         if(isPresent(Calculator.lastNumberDisplay)) {

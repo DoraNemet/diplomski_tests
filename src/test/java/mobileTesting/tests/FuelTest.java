@@ -14,7 +14,7 @@ import java.util.Locale;
 public class FuelTest extends CrossPlatformUtility {
 
     private static double PRICE = 10.34;
-    private double CONSUMPTION = 8.69;
+    private double CONSUMPTION = 8.59;
     private double DISTANCE = 23;
     NumberFormat nf = NumberFormat.getNumberInstance(Locale.GERMAN);
     DecimalFormat df = (DecimalFormat) nf;
@@ -41,8 +41,10 @@ public class FuelTest extends CrossPlatformUtility {
         df.setMaximumFractionDigits(2);
 
         clearElement(Fuel.consumptionField);
-        locateElementSendKeys(Fuel.consumptionField, Double.toString(CONSUMPTION));
         clearElement(Fuel.distanceField);
+        clearElement(Fuel.priceField);
+
+        locateElementSendKeys(Fuel.consumptionField, Double.toString(CONSUMPTION));
         locateElementSendKeys(Fuel.distanceField, Double.toString(DISTANCE));
         locateElementClick(Fuel.doneButon);
         verifyElementContainsText(Fuel.tripPrice, "");

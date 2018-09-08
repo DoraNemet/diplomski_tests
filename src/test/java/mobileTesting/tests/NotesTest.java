@@ -40,27 +40,38 @@ public class NotesTest extends CrossPlatformUtility {
         }
         switch (getPlatform()){
             case IOS:
-                swipeElementToLeft(CrossBy.id(TEST_NOTE, ""));
+                swipeElementToLeft(By.id(TEST_NOTE));
+                if(isPresent(By.id(TEST_NOTE))){
+                    failTest("Note is added and it shouldn't be");
+                }
                 break;
             case ANDROID:
                 locateElementClick(Notes.notesText);
                 locateElementClick(Notes.yes);
+                if(isPresent(Notes.notesText)){
+                    failTest("Note is added and it shouldn't be");
+                }
                 break;
-        }
-
-        if(isPresent(Notes.notesText)) {
-            failTest(TEST_NOTE + " not deleted");
         }
     }
 
     @Test(description = "Cancel from adding the note")
     public void cancelAddNote() {
+        threadSleep(2);
         locateElementClick(Notes.add);
         locateElementSendKeys(Notes.noteField, TEST_NOTE2);
         locateElementClick(Notes.cancel);
-        if(isPresent(Notes.notesText)){
-            failTest("Note is added and it shouldn't be");
+        switch (getPlatform()) {
+            case IOS:
+                if(isPresent(By.id(TEST_NOTE2))){
+                    failTest("Note is added and it shouldn't be");
+                }
+                break;
+            case ANDROID:
+                if(isPresent(Notes.notesText)){
+                    failTest("Note is added and it shouldn't be");
+                }
+                break;
         }
     }
-
 }

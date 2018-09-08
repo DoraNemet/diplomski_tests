@@ -23,7 +23,7 @@ public abstract class InitiateDevice {
         DesiredCapabilities capabilities = new DesiredCapabilities();
         capabilities.setCapability("clearSystemFiles", "true");
         capabilities.setCapability("newCommandTimeout", "200");
-        capabilities.setCapability("useNewWDA", true);
+       // capabilities.setCapability("useNewWDA", true);
         capabilities.setCapability("wdaStartupRetryInterval", "1000");
 
         switch (platform) {
