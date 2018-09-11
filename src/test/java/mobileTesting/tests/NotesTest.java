@@ -19,7 +19,8 @@ public class NotesTest extends CrossPlatformUtility {
     }
 
     @Test(description = "Add note")
-    public void addNote() {
+    public void skipTest() {
+        skipTest("Test skipped");
         locateElementClick(Notes.add);
         locateElementSendKeys(Notes.noteField, TEST_NOTE);
         locateElementClick(Notes.save);
@@ -34,10 +35,11 @@ public class NotesTest extends CrossPlatformUtility {
     }
 
     @Test(description = "Delete note")
-    public void deleteNote() {
+    public void failTest() {
         if(!isPresent(Notes.notesText)){
-            addNote();
+           // addNote();
         }
+        failTest("Test failed");
         switch (getPlatform()){
             case IOS:
                 swipeElementToLeft(By.id(TEST_NOTE));
@@ -56,7 +58,7 @@ public class NotesTest extends CrossPlatformUtility {
     }
 
     @Test(description = "Cancel from adding the note")
-    public void cancelAddNote() {
+    public void passTest() {
         threadSleep(2);
         locateElementClick(Notes.add);
         locateElementSendKeys(Notes.noteField, TEST_NOTE2);

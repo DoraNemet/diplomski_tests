@@ -44,7 +44,7 @@ public abstract class InitiateDevice {
                 capabilities.setCapability("automationName", "Appium");
                 capabilities.setCapability("appPackage", "com.example.dorafundak.multitask");
                 capabilities.setCapability("appActivity", "MainActivity");
-                androidDriver = new AndroidDriver(new URL("http://0.0.0.0:4723/wd/hub"), capabilities);
+                androidDriver = new AndroidDriver(new URL("http://0.0.0.0:4733/wd/hub"), capabilities);
                 break;
         }
         zeroTimeInterval = 0;

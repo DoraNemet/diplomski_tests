@@ -47,7 +47,7 @@ public class FuelTest extends CrossPlatformUtility {
         locateElementSendKeys(Fuel.consumptionField, Double.toString(CONSUMPTION));
         locateElementSendKeys(Fuel.distanceField, Double.toString(DISTANCE));
         locateElementClick(Fuel.doneButon);
-        verifyElementContainsText(Fuel.tripPrice, "");
+//        verifyElementContainsText(Fuel.tripPrice, "");
         verifyElementContainsText(Fuel.fuelUsed, df.format(DISTANCE * (CONSUMPTION / 100)));
     }
 }
