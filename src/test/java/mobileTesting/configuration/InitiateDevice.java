@@ -23,7 +23,7 @@ public abstract class InitiateDevice {
         DesiredCapabilities capabilities = new DesiredCapabilities();
         capabilities.setCapability("clearSystemFiles", "true");
         capabilities.setCapability("newCommandTimeout", "200");
-       // capabilities.setCapability("useNewWDA", true);
+        capabilities.setCapability("useNewWDA", true);
         capabilities.setCapability("wdaStartupRetryInterval", "1000");
 
         switch (platform) {
@@ -31,9 +31,9 @@ public abstract class InitiateDevice {
                 capabilities.setCapability("deviceName", "iPhone 8");
                 capabilities.setCapability("udid", "ebd4d4bf9bbae04a6a0d8663fa0ae4df8403a259");
                 capabilities.setCapability("platformName", "iOS");
-                capabilities.setCapability("platformVersion", "11.4.1");
+                capabilities.setCapability("platformVersion", "12.3");
                 capabilities.setCapability("automationName", "XCUITest");
-                capabilities.setCapability("bundleId", "dfundak.MultiTask");
+                capabilities.setCapability("bundleId", "com.dorafundak.Dicee");
                 iosDriver = new IOSDriver(new URL("http://0.0.0.0:4723/wd/hub"), capabilities);
                 break;
 
