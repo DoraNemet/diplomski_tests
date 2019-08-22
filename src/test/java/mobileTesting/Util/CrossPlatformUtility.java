@@ -1,12 +1,18 @@
 package mobileTesting.Util;
 
 import io.appium.java_client.TouchAction;
+import io.appium.java_client.touch.offset.ElementOption;
 import mobileTesting.configuration.InitiateDevice;
 import org.openqa.selenium.*;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.SkipException;
+
+import java.time.Duration;
+
+import static io.appium.java_client.touch.WaitOptions.waitOptions;
+import static io.appium.java_client.touch.offset.ElementOption.element;
 
 public abstract class CrossPlatformUtility extends InitiateDevice {
 
@@ -97,11 +103,15 @@ public abstract class CrossPlatformUtility extends InitiateDevice {
                 break;
         }
         WebElement element = getElement(identifier);
-        int leftX = element.getLocation().getX();
-        int upperY = element.getLocation().getY();
-        int elementWidth = element.getSize().getWidth();
-        int elementHeight = element.getSize().getHeight();
-        swipe.press((int) (leftX + (elementWidth * 0.8)), (int) (upperY + elementHeight * 0.1)).moveTo((int) (elementWidth * 0.8) * -1, 0).release().perform();
+        Dimension size = element.getSize();
+        ElementOption press = element(element, (int) (size.width * 0.8), size.height / 2);
+        ElementOption move = element(element, 1, size.height / 2);
+
+        swipe.press(press)
+                .waitAction(waitOptions(Duration.ofSeconds(2)))
+                .moveTo(move)
+                .release()
+                .perform();
     }
 
     /**
